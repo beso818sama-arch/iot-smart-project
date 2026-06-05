@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const groupMembers = [
         "Ahmed  Al-Balawi",
         "basel  Al-Balawi",
-        "zeyad  Al-Balawi"
+        "ziyad  Al-Balawi"
     ];
 
     // 2. خوارزمية (Fisher-Yates) لخبطة الأسماء عشوائياً بكل تحديث
