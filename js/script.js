@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. ضعوا أسماءكم الثلاثية هنا داخل المصفوفة
     const groupMembers = [
-        "Ahmed  Al-Balawi",
+        
         "basel  Al-Balawi",
         "ziyad  Al-Balawi"
     ];
