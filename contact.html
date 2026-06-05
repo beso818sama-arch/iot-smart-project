@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">IoT Hub</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="media.html">Media Gallery</a></li>
+            <li><a href="about.html">About IoT</a></li>
+            <li><a href="members.html">Team Members</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Contact Our Engineering Team</h2>
+        
+        <!-- Form with Validations (placeholder, pattern, types) -->
+        <form class="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address (Validation):</label>
+            <input type="email" id="email" name="email" placeholder="username@example.com" required>
+
+            <label for="phone">Phone Number (Pattern: 10 digits starting with 05):</label>
+            <input type="tel" id="phone" name="phone" pattern="05[0-9]{8}" placeholder="05xxxxxxxx" required>
+
+            <label for="message">Project Inquiry:</label>
+            <textarea id="message" name="message" placeholder="Describe your technical issue or inquiry..." rows="5" required></textarea>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </main>
+
+</body>
+</html>

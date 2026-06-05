@@ -1,0 +1,255 @@
+/* --- Global Dark Theme Styles --- */
+* {
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* خلفية سوداء داكنة جداً وفخمة */
+    color: #e2e8f0; /* نص أبيض مائل للرمادي مريح للعين */
+    line-height: 1.6;
+}
+
+/* المجلدات أو الحاويات الرئيسية للمحتوى (Cards) */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #111827; /* لون رمادي داكن جداً ليفصل عن الخلفية السوداء */
+    border-radius: 12px; /* زوايا منحنية ناعمة */
+    border: 1px solid #1f2937; /* حد رفيع يعطي لمسة ديزاين احترافية */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* ظل ناعم للمجلد */
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #38bdf8; /* لون أزرق سماوي مضيء يناسب ثيم الـ Tech */
+    font-weight: 600;
+}
+
+p {
+    color: #94a3b8;
+}
+
+/* --- Navigation Bar (ديزاين عصري) --- */
+.navbar {
+    background-color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3); /* توهج خفيف للوجو */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease; /* حركة ناعمة عند التحويم */
+}
+
+/* تأثير ديزاين عند مرور الماوس على القائمة Navbar */
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #ffffff;
+    background-color: #1e293b;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
+}
+
+/* --- Hero Banner (في الصفحة الرئيسية) --- */
+.hero-banner {
+    background: linear-gradient(135deg, #111827 0%, #0f172a 100%); /* تدرج لوني فخم */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #38bdf8, #818cf8); /* نص متدرج الألوان */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Buttons (أزرار ديزاين متفاعلة) --- */
+.btn-primary {
+    background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%); /* زر متدرج */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px); /* يرتفع الزر قليلاً عند مرور الماوس */
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6); /* يزيد التوهج */
+}
+
+/* --- Lists (تنسيق القوائم) --- */
+.focus-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none; /* إخفاء النقاط العادية */
+}
+
+.focus-list li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 25px;
+    color: #cbd5e1;
+}
+
+/* إضافة أيقونة مخصصة قبل عناصر القائمة كديزاين */
+.focus-list li::before {
+    content: "⚡"; /* علامة طاقة تناسب الهندسة والـ IoT */
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+}
+
+/* --- Table (جدول ديزاين داكن احترافي) --- */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    overflow: hidden; /* لضمان انحناء زوايا الجدول */
+}
+
+.project-table th, .project-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.project-table th {
+    background-color: #1e293b;
+    color: #38bdf8;
+    font-weight: 600;
+    border-bottom: 2px solid #334155;
+}
+
+.project-table td {
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+/* حركة عند مرور الماوس على صفوف الجدول */
+.project-table tr:hover {
+    background-color: #252f3f;
+    transition: background-color 0.2s ease;
+}
+
+/* --- Form (تنسيق حقول المدخلات) --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #1f2937;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* تأثير رائع عند الضغط على صندوق الكتابة */
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+/* تغيير لون الـ Placeholder ليتناسب مع الثيم */
+::placeholder {
+    color: #64748b;
+}
+
+/* --- Media Elements --- */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.video-container {
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* --- Responsive Layout (الهواتف الذكية) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+}
